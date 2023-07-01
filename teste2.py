@@ -182,17 +182,15 @@ total_processes = 3
 ports = {0:55550, 1:55551, 2:55552}
 
 
-process_id = 0
+
+process_id = 1
 process = COCAAlgorithm(process_id, total_processes, ports)
-process.sequencer = True
-process.init_sequencer()
 
 sleep(5)
 
-process.broadcast("MENSAGEM EM BROADCAST POR p0")
 
-process.send_message("Mensagem A1", 1)
-process.send_message("Mensagem A2", 2)
-process.send_message("Mensagem A3", 1)
-process.send_message("Mensagem A4", 1)
-process.send_message("Mensagem A5", 2)
+process.send_message("Mensagem B1", 0)
+process.send_message("Mensagem B2", 2)
+process.send_message("Mensagem B3", 2)
+process.send_message("Mensagem B4", 0)
+process.send_message("Mensagem B5", 2)
