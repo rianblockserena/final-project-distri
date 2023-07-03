@@ -2,6 +2,7 @@ from biblioteca import ClientRequest, GroupMember
 from time import sleep
 
 
+
 ################################### TESTE ########################################
 
 # Exemplo de uso
